@@ -1,0 +1,33 @@
+{
+    "apiVersion": 2,
+    "name": "progressbar/progress-bar",
+    "title": "Progress Bar",
+    "category": "media",
+    "icon": "format-image",
+    "description": "Show Progress Bar",
+    "keywords": [ "smugmug", "image" ],
+    "version": "1.0.0",
+    "textdomain": "progress-bar",
+    "attributes": {
+        "progress": {
+            "type": "number",
+            "default": 50
+        },
+        "labelText": {
+            "type": "string"
+        },
+        "labelPosition": {
+            "type": "string",
+            "default": "top"
+        },
+        "progressNumberPosition": {
+            "type": "string",
+            "default": "right"
+        }
+    },
+    "supports": {
+        "align": [ "wide", "full" ],
+        "alignWide": true
+    },
+    "style": "file:../../build/style-blocks.css"
+}
