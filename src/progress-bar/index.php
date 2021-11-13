@@ -52,9 +52,21 @@ function register() {
 				'labelText'              => array(
 					'type' => 'string',
 				),
+				'labelTextColor'         => array(
+					'type' => 'string',
+				),
+				'customLabelTextColor'   => array(
+					'type' => 'string',
+				),
 				'progressNumberPosition' => array(
 					'type'    => 'string',
 					'default' => "right",
+				),
+				"progressBarColor"       => array(
+					"type" => "string",
+				),
+				"customProgressBarColor" => array(
+					"type" => "string",
 				),
 			),
 			'script'        => 'progress-bar-block',

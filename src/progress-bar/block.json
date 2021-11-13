@@ -1,13 +1,13 @@
 {
     "apiVersion": 2,
-    "name": "progressbar/progress-bar",
+    "name": "sgn/progress-bar",
     "title": "Progress Bar",
     "category": "media",
     "icon": "format-image",
     "description": "Show Progress Bar",
-    "keywords": [ "smugmug", "image" ],
+    "keywords": [ "progressbar" ],
     "version": "1.0.0",
-    "textdomain": "progress-bar",
+    "textdomain": "sgn",
     "attributes": {
         "progress": {
             "type": "number",
@@ -20,9 +20,21 @@
             "type": "string",
             "default": "top"
         },
+        "labelTextColor": {
+            "type": "string"
+        },
+        "customLabelTextColor": {
+            "type": "string"
+        },
         "progressNumberPosition": {
             "type": "string",
             "default": "right"
+        },
+        "progressBarColor": {
+            "type": "string"
+        },
+        "customProgressBarColor": {
+            "type": "string"
         }
     },
     "supports": {

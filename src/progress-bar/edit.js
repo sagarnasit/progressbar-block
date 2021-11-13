@@ -1,19 +1,35 @@
-import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
+import { useBlockProps, getColorClassName, withColors } from '@wordpress/block-editor';
 import { __ } from '@wordpress/i18n';
 import Inspector from './inspector'
+import { Fragment } from "react";
 
-export default ( props ) => {
+const edit = ( props ) => {
 
-	const blockProps = useBlockProps( {} );
+	const {
+		attributes: {
+			labelText,
+			labelTextColor,
+			customLabelTextColor,
+			progressBarColor,
+			customProgressBarColor,
+			labelPosition
+		}
+	} = props;
 
-	const { attributes: { labelText, labelPosition } } = props;
+	const blockProps = useBlockProps( {
+		className: getColorClassName( 'color', labelTextColor ) + ' ' + getColorClassName( 'background-color', progressBarColor ),
+		style    : { color: customLabelTextColor, backgroundColor: customProgressBarColor }
+	} );
 
 	return (
-		<div {...blockProps} >
-			<div className="progress-bar__container">
-				<h1>Container</h1>
+		<Fragment>
+			<div {...blockProps} >
+				Progressbar
 			</div>
 			<Inspector {...props} />
-		</div>
+		</Fragment>
+
 	);
 };
+
+export default withColors( { labelTextColor: 'color', progressBarColor: 'background-color' } )( edit )
