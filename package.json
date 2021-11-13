@@ -1,0 +1,20 @@
+{
+  "name": "a8c-smugmug-blocks",
+  "version": "1.0.0",
+  "description": "Provide Smugmug albums and image Blocks ",
+  "main": "src/blocks.js",
+  "author": "WordPress.com Special Projects Team",
+  "license": "GPL-2.0",
+  "dependencies": {
+    "@wordpress/scripts": "^19.1.0"
+  },
+  "scripts": {
+    "dev": "wp-scripts start src/blocks.js --output-path=build",
+    "prod": "wp-scripts build src/blocks.js --output-path=build",
+    "lint:js": "wp-scripts lint-js ./src",
+    "format": "wp-scripts format",
+    "fix:js": "wp-scripts lint-js ./src --fix",
+    "lint:css": "wp-scripts lint-style './src/style.css'",
+    "fix:css": "wp-scripts lint-style './src/style.css' --fix"
+  }
+}
