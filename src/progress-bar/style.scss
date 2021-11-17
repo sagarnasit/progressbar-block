@@ -1,0 +1,30 @@
+.wp-block-sgn-progress-bar {
+	width: 100%;
+	background-color: transparent;
+	position: relative;
+
+	&__meter {
+		min-height: 30px;
+		width: 100%;
+	}
+
+	&__meter-progress {
+		position: relative;
+		min-height: 30px;
+		width: 50%;
+		z-index: 2;
+	}
+
+	.progress-label {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 3;
+	}
+
+	&__label.inside {
+		position: absolute;
+		left: 5px;
+	}
+}
