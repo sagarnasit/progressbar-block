@@ -41,5 +41,6 @@
         "align": [ "wide", "full" ],
         "alignWide": true
     },
-    "style": "file:../../build/style-blocks.css"
+    "script": "progress-bar-block-script",
+    "editorStyle": "progress-bar-block-style"
 }

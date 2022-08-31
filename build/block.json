@@ -1,0 +1,51 @@
+{
+  "apiVersion": 2,
+  "name": "sgn/progress-bar",
+  "title": "Progress Bar",
+  "category": "media",
+  "icon": "format-image",
+  "description": "Show Progress Bar",
+  "keywords": [
+    "progressbar"
+  ],
+  "version": "1.0.0",
+  "textdomain": "sgn",
+  "attributes": {
+    "progress": {
+      "type": "number",
+      "default": 50
+    },
+    "labelText": {
+      "type": "string"
+    },
+    "labelPosition": {
+      "type": "string",
+      "default": "top"
+    },
+    "labelTextColor": {
+      "type": "string"
+    },
+    "customLabelTextColor": {
+      "type": "string"
+    },
+    "progressNumberPosition": {
+      "type": "string",
+      "default": "right"
+    },
+    "progressBarColor": {
+      "type": "string"
+    },
+    "customProgressBarColor": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "alignWide": true
+  },
+  "script": "progress-bar-block-script",
+  "editorStyle": "progress-bar-block-style"
+}
